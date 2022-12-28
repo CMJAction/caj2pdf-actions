@@ -9,8 +9,7 @@ jobs:
     - name: preload env cmd
       shell: cmd
       run: |
-       pip install pypdf2
-       pip install imagesize
+       pip install -r requirements.txt
        curl https://mupdf.com/downloads/archive/mupdf-1.18.0-windows.zip -o mupdf.zip -L
     - name: preload env ps
       shell: powershell
